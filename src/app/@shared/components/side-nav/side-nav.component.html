@@ -1,0 +1,44 @@
+<div class="matt-sidenav">
+  <div *ngFor="let task_name of tasks_model">
+    <h3>{{ task_name.category_name }}</h3>
+    <ul class="box mb-0" fxLayout="row wrap">
+      <li fxLayout="row" fxLayoutAlign="start center" class="navv-item" *ngFor="let task of task_name.tasks">
+        <img [src]="task.imgUrl" alt="" width="15px" />
+
+        <span class="task-name">{{ task.name }}</span>
+      </li>
+    </ul>
+    <div class="gray-text" *ngFor="let other of tasks_model">+{{ other.other_tasks }} Tasks</div>
+  </div>
+  <div class="mt-3" *ngFor="let platform_name of platforms_model">
+    <h3>{{ platform_name.category_name }}</h3>
+    <ul class="box mb-0" fxLayout="row wrap">
+      <li fxLayout="row" fxLayoutAlign="start center" class="navv-item" *ngFor="let task of platform_name.platforms">
+        <img [src]="task.imgUrl" alt="" width="15px" />
+
+        <span class="task-name">{{ task.name }}</span>
+      </li>
+    </ul>
+    <div class="gray-text" *ngFor="let other of platforms_model">+{{ other.other_tasks }}</div>
+  </div>
+  <div class="mt-3" *ngFor="let dataset_name of datasets_model">
+    <h3>{{ dataset_name.category_name }}</h3>
+    <ul class="box mb-0" fxLayout="row wrap">
+      <li fxLayout="row" fxLayoutAlign="start center" class="navv-item" *ngFor="let task of dataset_name.datasets">
+        <span class="task-name">{{ task.name }}</span>
+      </li>
+    </ul>
+    <div class="gray-text" *ngFor="let other of datasets_model">+{{ other.other_tasks }}</div>
+  </div>
+  <div class="mt-3" *ngFor="let license_name of licenses_model">
+    <h3>{{ license_name.category_name }}</h3>
+    <ul class="box mb-0" fxLayout="row wrap">
+      <li fxLayout="row" fxLayoutAlign="start center" class="navv-item" *ngFor="let license of license_name.licenses">
+        <img [src]="license.imgUrl" alt="" width="15px" />
+
+        <span class="task-name">{{ license.name }}</span>
+      </li>
+    </ul>
+    <div class="gray-text" *ngFor="let other of platforms_model">+{{ other.other_tasks }}</div>
+  </div>
+</div>

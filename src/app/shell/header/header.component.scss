@@ -1,0 +1,64 @@
+@import "src/theme/theme-variables";
+// @import "src/assets/fonts/Gelion/stylesheet.css";
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #FFFFFF;
+  border: 0.5px solid #AEABAB5E;
+  .active{
+    color: #FFFFFF;
+    background-color: #174CA1;
+  }
+}
+
+.brand {
+  color: mat-color($app-primary, "default-contrast");
+  text-decoration: none;
+  padding-right: 1rem;
+}
+
+.menu-button {
+  margin-right: 1rem;
+}
+.title img{
+  width: 120px;
+}
+input[type="search"] {
+  border: none;
+  margin: 0;
+  padding: 7px 8px;
+  font-size: 13px;
+  color: inherit;
+  border: 1.5px solid #9D9D9D;
+  border-radius: 12px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+input[type="search"]::placeholder {
+  color: #9D9D9D;
+}
+input[type="search"]:focus {
+  // box-shadow: 0 0 3px 0 #1183d6;
+  // border-color: #1183d6;
+  outline: none;
+}
+.searchbar.nosubmit {
+  border: none;
+  padding: 0;
+ }
+ 
+ input.nosubmit {
+  border: 1.5px solid #9D9D9D;
+  border-radius: 12px;
+  //  width: 100%;
+   padding: 0px 4px 0px 35px;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search'  viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 10px center;
+ }
+ .header-btns button{
+  color: #000000;
+  font-family: 'Gelion SemiBold';
+
+ }

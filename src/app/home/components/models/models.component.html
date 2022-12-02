@@ -1,0 +1,39 @@
+<div fxFlex>
+  <mat-drawer-container fxFill>
+    <mat-drawer
+      #drawer
+      [mode]="isMobile ? 'over' : 'side'"
+      [opened]="!isMobile"
+      [disableClose]="!isMobile"
+      ngClass.gt-sm="has-border"
+    >
+      <app-side-nav></app-side-nav>
+    </mat-drawer>
+    <mat-drawer-content class="main-model-container">
+      <div fxHide.gt-sm fxLayoutAlign="start center">
+        <!-- <span class="title">{{ title }}</span> -->
+        <!-- <span fxHide class="title"><img src="assets/icons/logo.svg" alt="" /></span> -->
+      </div>
+      <div fxHide.gt-sm fxLayoutAlign="start center">
+        <!-- <button class="menu-button" mat-icon-button (click)="drawer.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button> -->
+        <!-- <span class="title">{{ title }}</span> -->
+      </div>
+
+      <!-- <div class="c-toolbar" fxLayout="flex" fxLayoutAlign="space-between center">
+        <div class="c-header" fxLayout="flex">
+          <h4>Models<span>85000</span></h4>
+          <span>
+            <div class="searchbar">
+              <form class="nosubmit">
+                <input class="nosubmit" type="search" placeholder="Search models" />
+              </form></div
+          ></span>
+        </div>
+      </div> -->
+
+      <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</div>

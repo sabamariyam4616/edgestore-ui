@@ -1,0 +1,40 @@
+@import "../../../../theme/mixings.scss";
+.matt-sidenav {
+  min-width: 400px;
+  max-width: 400px;
+  overflow: hidden;
+  background-color: #f4f4f4;
+  @include for-size(tablet-landscape-up) {
+    padding: 30px;
+  }
+  h3 {
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .box {
+    padding: 0;
+   
+    li {
+      margin: 0px 8px 8px 0px;
+      background-color: #edf4ff;
+      border: 0.5px solid #cac8c8;
+      border-radius: 8px;
+
+      padding: 2px 10px;
+      // width: min-content;
+      cursor: pointer;
+      // .nav-img{
+      //   border-right: .5px solid #CAC8C8;
+
+      // }
+     
+    }
+
+  }
+  .gray-text{
+    color: #A3A3A3;
+    font-size: 12px;
+  }
+}
